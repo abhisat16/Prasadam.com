@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Prasadam.com · Verified temple prasad, delivered home</title>
+<meta name="description" content="Order authentic prasad from temples across India, verified by temple trusts and tracked to your door. Muhurat launch 3 Nov 2026.">
+<meta property="og:title" content="Prasadam.com">
+<meta property="og:description" content="Verified temple prasad, delivered home.">
+<meta property="og:image" content="assets/screenshots/home.png">
+<meta name="theme-color" content="#A8201A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 84 84'%3E%3Cpath d='M42 8 C33 23 35 34 42 38 C49 34 51 23 42 8 Z' fill='%23E9A91A'/%3E%3Cpath d='M8 46 Q42 39 76 46 Q68 72 42 72 Q16 72 8 46 Z' fill='%23A8201A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Mukta:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Prasadam home">
+      <svg width="34" height="34" viewBox="0 0 84 84" aria-hidden="true"><path d="M42 8 C33 23 35 34 42 38 C49 34 51 23 42 8 Z" fill="#E9A91A"/><path d="M42 19 C38 27 39 33 42 36 C45 33 46 27 42 19 Z" fill="#E2701A"/><path d="M8 46 Q42 39 76 46 Q68 72 42 72 Q16 72 8 46 Z" fill="#FCEBCB"/><path d="M13 48 Q42 43 71 48" stroke="#E9A91A" stroke-width="3" fill="none"/></svg>
+      <b>Prasadam<small>.com</small></b>
+    </a>
+    <nav class="links">
+      <a href="#how">How it works</a>
+      <a href="#temples">Temple map</a>
+      <button class="cart-btn" id="openCart" type="button">Prasad Thali <span class="n" id="cartN">0</span></button>
+    </nav>
+  </div>
+</header>
+
+<div class="hang" id="hang" role="region" aria-label="Muhurat launch announcement">
+  <svg class="rope" id="rope" aria-hidden="true"></svg>
+  <div class="flag side" data-x=".16" style="width:clamp(88px,17vw,168px)">
+    <span class="hook"></span><span class="rod"></span>
+    <div class="cloth"><div class="cloth-in">
+      <span class="dv">शुभ मुहूर्त</span>
+      <span class="big">Muhurat Launch</span>
+      <span class="orn">✦✦✦</span>
+    </div></div><span class="tassel"></span>
+  </div>
+  <div class="flag center" data-x=".5" style="width:clamp(132px,26vw,236px)">
+    <span class="hook"></span><span class="rod"></span>
+    <div class="cloth"><div class="cloth-in" id="cdCloth">
+      <span class="sm" id="cdLabel">Opens in</span>
+      <div class="cd" id="cd"><div><b id="cH">--</b><span>hrs</span></div><div><b id="cM">--</b><span>min</span></div><div><b id="cS">--</b><span>sec</span></div></div>
+      <span class="sm" id="cdDate">Tue, 3 Nov · 1:00 PM IST</span>
+    </div></div><span class="tassel"></span>
+  </div>
+  <div class="flag side" data-x=".84" style="width:clamp(88px,17vw,168px)">
+    <span class="hook"></span><span class="rod"></span>
+    <div class="cloth"><div class="cloth-in">
+      <span class="dv">घर बैठे</span>
+      <span class="big">Order prasad from home</span>
+      <span class="orn">✦✦✦</span>
+    </div></div><span class="tassel"></span>
+  </div>
+</div>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Authorised temple prasad · Delivered across India</p>
+        <h1>Prasad from India’s sacred temples, <em>delivered to your door.</em></h1>
+        <p class="lede">Can’t make the journey? Prasadam connects you with vendors authorised by temple trusts, so the laddoo or peda you receive is the same prasad offered at the deity’s feet.</p>
+        <div class="cta-row">
+          <a class="btn btn-main" href="#temples">Find your temple</a>
+          <a class="btn btn-ghost" href="#how">How it works</a>
+        </div>
+        <div class="chips">
+          <span><i></i><span id="statTemples">—</span> temples across <span id="statStates">—</span> states &amp; UTs</span>
+          <span><i></i>Trust-authorised vendors only</span>
+          <span><i></i>Sealed and bhog-dated</span>
+        </div>
+      </div>
+      <aside class="feature" aria-label="Today's featured prasad">
+        <span class="tag">Today’s prasad</span>
+        <img class="feat-img" src="assets/img/u_mahaprasad.jpg" alt="Jagannath Mahaprasad served in clay pots">
+        <h3>Jagannath Mahaprasad</h3>
+        <p class="place">Shree Jagannath Temple, Puri · Odisha</p>
+        <ul>
+          <li><span class="fl"><span class="thumb"><img src="assets/img/u_mahaprasad.jpg" alt=""></span>Dry Mahaprasad (Nirmalya) · 100 g</span><b>₹151</b></li>
+          <li><span class="fl"><span class="thumb" id="khajaThumb"></span>Khaja · 500 g</span><b>₹251</b></li>
+        </ul>
+        <button class="btn btn-main" type="button" data-jump="or">View Odisha temples</button>
+      </aside>
+    </div>
+  </section>
+
+  <section class="band" id="how">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Three steps</p>
+        <h2>From the temple to your home</h2>
+      </div>
+      <ol class="steps">
+        <li><span class="num">1</span><div><h3>Pick a state and temple</h3><p>Tap your state on the map of India and browse the prasad offered at its most revered temples.</p></div></li>
+        <li><span class="num">2</span><div><h3>Order from an authorised vendor</h3><p>Every vendor is registered with the temple trust. The prasad comes from the temple’s own bhog kitchen.</p></div></li>
+        <li><span class="num">3</span><div><h3>Sealed box at your door</h3><p>Packed and dated on the day of the offering, dispatched from the vendor nearest your pincode.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="temples">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">The prasad map of Bharat</p>
+        <h2>Every state, up to ten revered temples</h2>
+        <p>Select a state on the map, or choose it from the list, then filter by city to find the temples nearest you and their prasad menus.</p>
+      </div>
+      <div class="map-layout">
+        <div class="map-card">
+          <div class="map-tools">
+            <label for="stateSelect">State <select id="stateSelect"></select></label>
+            <span class="t">Hover or tap a state</span>
+          </div>
+          <div class="map-box" id="mapBox">
+            <svg id="india" viewBox="0 0 612 696" role="group" aria-label="Map of India by state"></svg>
+            <div class="tip" id="tip" hidden></div>
+          </div>
+          <div class="legend">
+            <span><i></i>Prasad available</span>
+            <span><i class="soon"></i>Vendors onboarding</span>
+            <span><i class="pin"></i>Selected state</span>
+          </div>
+        </div>
+        <div class="state-card" id="stateCard" aria-live="polite"></div>
+      </div>
+      <div class="grid-head" id="gridHead"></div>
+      <div class="tgrid" id="tgrid"></div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Our promise</p>
+        <h2>With devotion, and with purity</h2>
+      </div>
+      <figure class="thali"><img src="assets/img/u_thali.jpg" alt="A prasad thali with laddoos, barfi, fruit and kheer on a banana leaf" loading="lazy"><figcaption>Every box is sealed and bhog-dated</figcaption></figure>
+      <div class="promises">
+        <div><h3>Authorised vendors only</h3><p>A vendor joins Prasadam only after we verify their authorisation letter from the temple trust.</p></div>
+        <div><h3>Sealed and dated</h3><p>Every box carries the temple’s name, the date of the bhog and a best-before date.</p></div>
+        <div><h3>Nearest temple first</h3><p>Orders ship from the authorised vendor closest to your pincode, so prasad reaches you fresh.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><b>Prasadam</b> · Connecting devotees with the divine</span>
+    <span>MVP prototype · Demo data, no real payments · Photos: Wikimedia Commons contributors, credited on each photo · Map: svg-maps/india (CC BY 4.0)</span>
+  </div>
+  <div class="wrap"><details class="credits"><summary>Photo credits</summary><ul id="creditList"></ul></details></div>
+</footer>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" hidden aria-label="Prasad Thali">
+  <div class="drawer-head"><h2>Your Prasad Thali</h2><button class="x" id="closeCart" type="button" aria-label="Close">×</button></div>
+  <div class="drawer-body" id="drawerBody"></div>
+</aside>
+<div class="toast" id="toast" hidden></div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
